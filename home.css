@@ -21,7 +21,6 @@ a {
   }
   
   body {
-    font-family: Sora, "sans-serif";
     line-height: 1.7;
     color: var(--body);
   }
@@ -181,6 +180,25 @@ a {
     color: #fff;
   }
   
+  .medium {
+    background-image: url(images/jigyo_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.medium::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(222, 239, 255, 0.7);
+    z-index: -1;
+}
 
 
   .contact {
@@ -207,7 +225,7 @@ a {
 }
 
 
-@media screen and (min-width: 1080px) { /*ウィンドウ幅が最小767pxまでの場合に適用*/
+@media screen and (min-width: 1080px) { /*ウィンドウ幅が最小1080pxまでの場合に適用*/
 
 .contents {
     background-color:  white;
@@ -277,6 +295,7 @@ section{
     width: 600px;
     height: 350px;
     overflow: hidden;
+    filter: drop-shadow(5px 5px 5px #aaa);
 }
 
 .content .image img{
@@ -426,6 +445,7 @@ section{
         width: 550px;
         height: 450px;
         overflow: hidden;
+        filter: drop-shadow(5px 5px 5px #aaa);
     }
 
         .content2 .image img {
@@ -758,6 +778,7 @@ header .headline{
         width: 280px;
         height: 200px;
         overflow: hidden;
+        filter: drop-shadow(5px 5px 5px #aaa);
     }
     
     .content .image img{
@@ -908,6 +929,7 @@ header .headline{
             width: 280px;
             height: 200px;
             overflow: hidden;
+            filter: drop-shadow(5px 5px 5px #aaa);
         }
     
             .content2 .image img {
